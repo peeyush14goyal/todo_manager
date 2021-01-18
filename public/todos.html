@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Management App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="todo-app.css" />
+  </head>
+  <body>
+    <article>
+      <h1 class="TodoPage--title">My Todo-list</h1>
+      <section class="AddTodo">
+        <input class="AddTodo--text" type="text" placeholder="What's next?" />
+        <input class="AddTodo--date" type="date" />
+        <input class="AddTodo--button" type="button" value="Add" />
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection__title">
+          <p class="TodoSection__title--text">Due Today</p>
+          <p class="TodoSection__title--remainingCount">0/4</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <div class="TodoItem--container">
+              <input class="TodoItem--checkbox" type="checkbox" />
+              Type Something
+              <p class="TodoItem--overdueLabel">Overdue</p>
+              <a class="TodoItem--delete" href="javascript:void(0)">
+                <img src="delete.png" alt="delete-icon" />
+              </a>
+            </div>
+          </li>
+          <li class="TodoItem">
+            <div class="TodoItem--container">
+              <input class="TodoItem--checkbox" type="checkbox" />Type Something
+              <a class="TodoItem--delete" href="javascript:void(0)">
+                <img src="delete.png" alt="delete-icon" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>
