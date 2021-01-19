@@ -75,12 +75,7 @@ body {
   padding: 2px 8px;
   align-items: center;
 }
-/* .TodoItem--overdueLabel {
-  margin-left: 10px;
-  color: #c53030;
-  font-size: 12px;
-  display: inline;
-} */
+
 .TodoItem--delete {
   visibility: hidden;
   margin-left: 8px;
