@@ -9,16 +9,13 @@ class UsersController < ApplicationController
     name = params[:name]
     email = params[:email]
     password = params[:password]
-    if (name.to_s.length > 0 && email.to_s.length > 0 && password.to_s.length > 0)
-      new_user = User.create!(
-        name: name,
-        email: email,
-        password: password,
-      )
-      response_text = "New User is created with this id : #{new_user.id}"
-    else
-      response_text = "ERROR: Name or email or password is Empty"
-    end
+
+    new_user = User.create!(
+      name: name,
+      email: email,
+      password: password,
+    )
+    response_text = "New User is created with this id : #{new_user.id}"
     render plain: response_text
   end
 
