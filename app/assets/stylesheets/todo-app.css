@@ -100,6 +100,6 @@ body {
   margin-left: 10px;
 }
 
-.TodoItem--checkbox:checked .TodoItem--text {
+input[type="checkbox"]:checked + p {
   text-decoration: line-through;
 }
