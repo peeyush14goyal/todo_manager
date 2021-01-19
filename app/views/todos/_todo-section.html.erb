@@ -12,7 +12,7 @@
             <p class="TodoItem--text"><%= todo.todo_text %></p>
           <% else %>
             <input class="TodoItem--checkbox" type="checkbox"/>
-            <p><%= todo.todo_text %></p>
+            <p class="TodoItem--text"><%= todo.todo_text %></p>
           <% end%>
           <% if show_due_date %>
             <p class="TodoItem--dueDate"><%= todo.due_date.to_s(:short)%></p>
