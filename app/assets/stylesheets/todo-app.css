@@ -99,3 +99,6 @@ body {
   color: purple;
   margin-left: 10px;
 }
+.TodoItem--text {
+  text-decoration: line-through;
+}
