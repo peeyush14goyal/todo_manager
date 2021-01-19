@@ -99,6 +99,7 @@ body {
   color: purple;
   margin-left: 10px;
 }
-.TodoItem--checkbox:checked > .TodoItem--text {
+
+.TodoItem--checkbox:checked .TodoItem--text {
   text-decoration: line-through;
 }
