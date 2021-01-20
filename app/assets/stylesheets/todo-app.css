@@ -95,6 +95,6 @@ body {
   margin-left: 10px;
 }
 
-input[type="checkbox"]:checked + p {
+.TodoItem--completedText {
   text-decoration: line-through;
 }
