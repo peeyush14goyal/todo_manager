@@ -98,3 +98,6 @@ body {
 .TodoItem--completedText {
   text-decoration: line-through;
 }
+input[type="image"] {
+  width: 16px;
+}
