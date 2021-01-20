@@ -8,12 +8,9 @@
       <li class="TodoItem">
         <div class="TodoItem--container">
           <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
-            <input
-              class="TodoItem--checkbox"
-              name="completed"
-              type="checkbox"
-              onclick="this.form.submit()"
-              <%= todo.completed ? "checked" : "" %> />
+
+            <%= check_box_tag 'completed', nil, todo.completed,
+            {:class => "TodoItem--checkbox", :onclick => "this.form.submit()"} %>
 
           <% end %>
           <p class='<%= todo.completed ? "TodoItem--completedText" : "" %>'>
@@ -25,7 +22,7 @@
 
           <a class="TodoItem--delete" href="javascript:void(0)">
             <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
-              <input type="image" src="delete.png" alt="submit" />
+              <%= image_submit_tag("delete.png", alt: "submit") %>
             <% end %>
           </a>
         </div>
