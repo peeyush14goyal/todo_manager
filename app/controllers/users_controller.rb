@@ -12,12 +12,18 @@ class UsersController < ApplicationController
       email: params[:email],
       password: params[:password],
     )
-    if user.save
-      session[:current_user_id] = user.id
-      redirect_to "/"
-    else
-      flash[:error] = user.errors.full_messages.join(", ")
+    existing = User.find_by(email: user.email)
+    if existing != nil
+      flash[:error] = "Email already exists"
       render "users/new"
+    else
+      if user.save
+        session[:current_user_id] = user.id
+        redirect_to "/"
+      else
+        flash[:error] = user.errors.full_messages.join(", ")
+        render "users/new"
+      end
     end
   end
 end
