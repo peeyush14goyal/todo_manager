@@ -1,9 +1,14 @@
 # Todo Application
 An easy and ready to use Todo Application. No need to remember your tasks or write down on paper. Just login and access your todos anytime anywhere.
 A fully-functional Todo application built with great UI.
-#### Deplyed on Heroku: http://peeyush-todo-manager-saas-201.herokuapp.com/
+#### Deployed on Heroku: http://peeyush-todo-manager-saas-201.herokuapp.com/
 
 ### Screenshots
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/user1_ui.PNG)
+
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/delete_button.PNG)
+
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/user2_ui.PNG)
 
 ### Features
 - Access Anywhere
@@ -27,6 +32,7 @@ Email: user2@xyz.com
 Password: test2user@pass
 
 ## Developer Use
+### For latest Code go to L9 branch
 * Clone or download the repo.
 * Unzip if downloaded and then run ``` bundle install ``` in root directory of the app (inside todo_manager folder)
 * Contribute
