@@ -4,6 +4,11 @@ A fully-functional Todo application built with great UI.
 #### Deployed on Heroku: http://peeyush-todo-manager-saas-201.herokuapp.com/
 
 ### Screenshots
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/user1_ui.PNG)
+
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/delete_button.PNG)
+
+![alt text](https://github.com/peeyush14goyal/todo_manager/blob/L9-Code/screenshots/user2_ui.PNG)
 
 ### Features
 - Access Anywhere
